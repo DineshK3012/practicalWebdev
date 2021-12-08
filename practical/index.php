@@ -39,7 +39,7 @@ session_start();
                     <div class="lower">
                         <div class="topic">Contact us</div>
                         <div class="phone">
-                            <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+                            <a href="#"><i class="fas fa-phone-volume"></i>+91 9814567885</a>
                         </div>
                         <div class="email">
                             <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
@@ -48,12 +48,31 @@ session_start();
                 </div>
             </div>
             <div class="bottom">
-                <p>Copyright © 2020 <a href="#">CodingLab</a> All rights reserved</p>
+                <p>Copyright © 2021 SGTB: RMS | All rights reserved</p>
             </div>
         </footer>
 
         <script src="script.js"></script>
 
+        <!-- jquery script -->
+        <script src="js/jquery-3.6.0.js"></script>
+        <script>
+        //logout script
+        $(document).ready(function() {
+            $('#logout').click(function() {
+                $.ajax({
+                    url: 'partials/_logout.php',
+                    method: 'POST',
+                    data: {
+                        logoutRequest: true,
+                    },
+                    success: function(data) {
+                        location.reload();
+                    }
+                });
+            });
+        });
+        </script>
 </body>
 
 </html>

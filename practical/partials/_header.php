@@ -23,7 +23,7 @@
                     }else{
                         echo '<a href="results.php"><button class="btn">Results</button></a>';
                     }
-                    echo '<a href="logout.php"><button class="btn">Logout</button></a>';
+                    echo '<button class="btn" id="logout">Logout</button></>';
                 }else
                 {
                     echo '<a href="login.php"><button class="btn">Login</button></a>';
