@@ -7,12 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGTB: RMS Login</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #232323;
+            color: white;
         }
 
         .form-btn {
@@ -96,6 +104,11 @@
         .container>div input::-webkit-inner-spin-button {
             -webkit-appearance: none;
             margin: 0;
+        }
+
+        .container .form label {
+            color: white;
+            font-weight: bold;
         }
 
         .container>div input,
@@ -219,15 +232,13 @@
 
                             } else {
                                 showPara.hide();
-                                setTimeout(function () {
-                                }, 2000);
+                                setTimeout(function () { }, 2000);
                             }
                         }
                     });
                 }
             });
         });
-
     </script>
 </body>
 

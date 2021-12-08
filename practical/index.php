@@ -10,7 +10,10 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGTB: Result Management System</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body class="mobile">
@@ -18,37 +21,16 @@ session_start();
 
     <section class="main">
         <h1 class="center" id="headline">
-            WELCOME TO STGB KHALSA RESULT MANAGEMENT SYSTEM
+            Welcome To SGTB Result Management System
         </h1>
         <div class="img">
-            <img id="img" src="img1.jpeg" alt="no img">
+            <img id="img" src="img1.jpeg" alt="img">
         </div>
 
         <!--including footer file -->
         <footer>
             <div class="content">
-                <div class="box">
-                    <div class="upper">
-                        <div class="topic">About us</div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laborum vero minima
-                            exercitationem maiores
-                            hic expedita odio nulla, excepturi placeat, quisquam laudantium dolor quaerat repudiandae?
-                        </p>
-                    </div>
-                    <div class="lower">
-                        <div class="topic">Contact us</div>
-                        <div class="phone">
-                            <a href="#"><i class="fas fa-phone-volume"></i>+91 9814567885</a>
-                        </div>
-                        <div class="email">
-                            <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom">
-                <p>Copyright © 2021 SGTB: RMS | All rights reserved</p>
+                <p>Copyright © 2021 | SGTB: Result Management System | All rights reserved |</p>
             </div>
         </footer>
 

@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
 }
 :root {
   /* --primary: #933ded; */
@@ -21,19 +22,20 @@ body {
   background: #d3cce3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #e9e4f0,
-    #d3cce3
+    rgb(56, 56, 56),
+    rgb(22, 22, 22)
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #e9e4f0,
-    #d3cce3
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #232323; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#img {
-  width: 100%;
-  height: 30%;
+
+.img {
+  width: 95%;
+  margin: 0.5rem auto;
   /* margin-left: 150px; */
+}
+
+.img img {
+  width: 100%;
 }
 
 .container {
@@ -46,6 +48,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
 }
 
 .brand {
@@ -55,6 +58,10 @@ body {
 
 .brand img {
   width: 100%;
+}
+
+nav {
+  box-shadow: 0px 0px 4px rgb(150, 148, 148);
 }
 
 .nav-wrapper ul.nav-list {
@@ -69,7 +76,7 @@ body {
 }
 
 .nav-wrapper ul.nav-list li a {
-  color: black;
+  color: white;
   text-decoration: none;
   letter-spacing: 1px;
   transition: all 0.5s ease-in-out;
@@ -90,14 +97,16 @@ body {
   letter-spacing: 1px;
   border: 1px solid transparent;
   transition: all 0.5s ease-in-out;
+  margin: 0 0.5rem;
 }
 
 .btn:hover {
   background: transparent;
-  border-color: black;
+  border-color: white;
+  color: white;
 }
 
-main section.header {
+.main section.header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,14 +114,14 @@ main section.header {
   margin-top: 160px;
 }
 
-main section.header h1 {
+.main section.header h1 {
   font-size: 36px;
   font-weight: 100;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
-main section.header h4 {
+.main section.header h4 {
   font-size: 18px;
   font-weight: 400;
   color: var(--dark-gray);
@@ -281,17 +290,17 @@ a:hover {
 }
 
 footer .content {
-  max-width: 1350px;
   margin: auto;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #000;
+  background-color: rgb(22, 22, 22);
 }
-footer .content p,
-a {
+footer .content p {
   color: #fff;
+  margin: 1rem auto;
+  font-size: 1.4rem;
 }
 footer .content .box {
   width: 33%;

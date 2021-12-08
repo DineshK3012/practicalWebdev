@@ -21,8 +21,9 @@
                 $percentage = $total/4;
 
                 // echo "Result Found";
-                echo '<div name="username">Username :'.$_SESSION['name'].'</div>
-                <div name="rollno">Roll No. :'.$ft['rollno'].'</div>
+                echo '<div class="result-container">
+                <div name="username">Username : '.$_SESSION['name'].'</div>
+                <div name="rollno">Roll No. : '.$ft['rollno'].'</div>
                 <div name="dob">DOB : '.$ft['dob'].'</div>
                 
                 <table class="table" style="width: 81%;align-items: center">
@@ -34,19 +35,19 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <th scope="row">Maths</th>
+                        <td scope="row">Maths</td>
                         <td>'.$ft['Maths'].'</td>
                            </tr>
                     <tr>
-                        <th scope="row">Science</th>
+                        <td scope="row">Science</td>
                         <td>'.$ft['Science'].'</td>
                         </tr>
                     <tr>
-                        <th scope="row">Computer Science</th>
+                        <td scope="row">Computer Science</td>
                         <td>'.$ft['Computer Science'].'</td>
                          </tr>
                     <tr>
-                        <th scope="row">English</th>
+                        <td scope="row">English</td>
                         <td>'.$ft['English'].'</td>
                          </tr>
                     </tbody>
@@ -55,7 +56,8 @@
                     Total Marks : '.$total.' 
                 </div>
                 <div>
-                    Percentage : '.$percentage.' %
+                    Percentage : '.$percentage.'%
+                </div>
                 </div>';
             }
             else{

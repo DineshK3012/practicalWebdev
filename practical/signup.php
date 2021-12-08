@@ -18,6 +18,11 @@
             font-family: 'Poppins', sans-serif;
         }
 
+        body {
+            background-color: #232323;
+            color: white;
+        }
+
         .form-btn {
             width: 80%;
             margin: auto;
@@ -92,7 +97,8 @@
             text-align: left;
             margin: 0.4rem 0.5rem;
             margin-top: 0.8rem;
-            color: rgb(175, 9, 9);
+            /* color: rgb(175, 9, 9); */
+            color: white;
         }
 
         .container>div input::-webkit-outer-spin-button,
@@ -110,15 +116,6 @@
             border: none;
             outline: none;
             background-color: rgb(248, 237, 237);
-        }
-
-        .container>div div img {
-            vertical-align: bottom;
-            margin: 0 2rem;
-        }
-
-        .container>div #captcha {
-            width: 50%;
         }
 
         .container button,
@@ -319,7 +316,9 @@
                         if (data != "Email sending failed...") {
                             rotp = data;
                         } else {
-                            showPara.html("Email sending failed. Try After Sometime or Send correct Email");
+                            showPara.html(
+                                "Email sending failed. Try After Sometime or Send correct Email"
+                            );
                             showPara.appendTo('.otp');
 
                             setTimeout(function () {
@@ -359,8 +358,7 @@
                     setTimeout(function () {
                         showPara.hide();
                     }, 3000);
-                }
-                else {
+                } else {
                     $.ajax({
                         url: 'partials/_te_signup.php',
                         method: 'POST',
@@ -393,7 +391,6 @@
                 }
             });
         });
-
     </script>
 
 </body>
